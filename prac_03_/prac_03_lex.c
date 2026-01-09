@@ -1,3 +1,7 @@
+/*
+    Program to check validation of User Name and Password in C
+*/
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
