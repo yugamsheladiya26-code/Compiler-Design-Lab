@@ -1,0 +1,22 @@
+C. Write a lex program which adds line numbers to the given file and display
+the same onto the standard output
+
+%{
+#include<stdio.h>
+55
+E.NO: 2303031050592
+int ln=0;
+%}
+%%
+[\n] {}
+.* {ln++;fprintf(yyout,"\n%d.%s",ln,yytext);}
+%%
+int yywrap() {
+return 1;
+}
+int main() {
+extern FILE *yyin,*yyout; yyin= fopen("basic.txt","r");
+yyout=fopen("basic1.txt","w");
+yylex();
+return 0;
+}
