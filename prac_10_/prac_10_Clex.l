@@ -3,8 +3,6 @@ the same onto the standard output
 
 %{
 #include<stdio.h>
-55
-E.NO: 2303031050592
 int ln=0;
 %}
 %%
